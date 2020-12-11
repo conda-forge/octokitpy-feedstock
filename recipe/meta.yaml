@@ -1,5 +1,5 @@
 {% set name = "octokitpy" %}
-{% set version = "0.14.2" %}
+{% set version = "0.14.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 46f3690d08482937104cad9979b0a6d9094612cc22c01a3cf67f0b09c80f24f6
+  sha256: c16d7053f44a1909025b656e10431e319d6567af1ee4b65636745581559a75c3
 
 build:
   noarch: python
