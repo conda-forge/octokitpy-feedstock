@@ -5,11 +5,13 @@ Home: https://github.com/khornberg/octokit.py
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/octokitpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python client for GitHub API
 
+Development: https://github.com/khornberg/octokit.py
 
+Documentation: https://octokitpy.readthedocs.io/en/latest/
 
 Current build status
 ====================
