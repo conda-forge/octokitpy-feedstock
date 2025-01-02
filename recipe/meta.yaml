@@ -6,25 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0879c0e54dbd31aa304184d662ff09f543dafcd74e66fdf493063c77445ce57e
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - octokitpy-routes >=2.2.0
     - python-jose >=3.1.0
     - requests >=2.23.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - octokit
 
